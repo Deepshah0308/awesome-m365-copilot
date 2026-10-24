@@ -1,61 +1,88 @@
-# Awesome Microsoft 365 Copilot
+# Awesome Microsoft 365 Copilot [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of tools, guides, scripts and governance resources for **Microsoft 365 Copilot** and **AI agents**, with a focus on securing and governing them (Intune, Entra, Purview, Defender).
+> Curated guides, prompts, agent skills, governance and endpoint resources for Microsoft 365 Copilot and its agents.
 
-Maintained by [Deep Shah](https://github.com/Deepshah0308). Contributions welcome.
+Maintained by [Deep Shah](https://shahdeep.ca). Everything here is checked by a human before it is added. Corrections are welcome.
 
 ## Contents
 
 - [Official documentation](#official-documentation)
-- [Readiness and adoption](#readiness-and-adoption)
 - [Security and governance](#security-and-governance)
-- [Intune and endpoint](#intune-and-endpoint)
+- [Adoption and readiness](#adoption-and-readiness)
+- [Prompts](#prompts)
 - [Agents and extensibility](#agents-and-extensibility)
+- [Samples and tools](#samples-and-tools)
 - [Scripts and automation](#scripts-and-automation)
-- [Blogs, videos and community](#blogs-videos-and-community)
-- [Contributing](#contributing)
+- [Agent skills](#agent-skills)
+- [Updates](#updates)
+- [Community](#community)
 
 ## Official documentation
 
-- [Microsoft 365 Copilot documentation](https://learn.microsoft.com/copilot/microsoft-365/) - Microsoft Learn
-
-## Readiness and adoption
-
-_Nothing here yet. Add the first entry._
+- [Microsoft 365 Copilot documentation](https://learn.microsoft.com/copilot/microsoft-365/) - The main Microsoft Learn hub for admins and users.
+- [Copilot Control System](https://learn.microsoft.com/copilot/microsoft-365/copilot-control-system/overview) - Overview of the controls for securing, managing and measuring Copilot and agents.
+- [What's new for Microsoft 365 Copilot developers](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/whats-new) - Monthly changelog for extensibility features.
+- [Microsoft Learn samples gallery](https://learn.microsoft.com/en-us/samples/browse/) - Searchable code samples across Microsoft products.
+- [Microsoft 365 Developer on YouTube](https://www.youtube.com/@Microsoft365Developer) - Official videos for Copilot extensibility.
 
 ## Security and governance
 
-_Data protection, oversharing, sensitivity labels, DLP, Conditional Access, agent governance._
+- [Microsoft 365 Copilot oversharing blueprint](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-blueprint-oversharing) - Step-by-step guidance to find and fix oversharing before and after rollout ([PDF](https://aka.ms/Copilot/SecureGovernBlueprintPDF)).
+- [Secure and govern Copilot foundations](https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance) - Foundational deployment guidance for security and governance.
+- [Configure a secure and governed data foundation](https://learn.microsoft.com/en-us/microsoft-365/copilot/configure-secure-governed-data-foundation-microsoft-365-copilot) - Data-protection setup to complete before enabling Copilot.
+- [Microsoft Purview documentation](https://learn.microsoft.com/en-us/purview/) - Sensitivity labels, DLP and compliance controls that Copilot respects.
+- [Purview secure by default](https://learn.microsoft.com/en-us/purview/deploymentmodels/depmod-securebydefault-intro) - A deployment model for protecting data by default.
+- [SharePoint Advanced Management](https://learn.microsoft.com/en-us/sharepoint/advanced-management) - Site-level controls and reports used to reduce oversharing.
+- [Zero Trust Assessment](https://microsoft.github.io/zerotrustassessment/guide) - Open-source assessment of a tenant's Zero Trust posture.
 
-## Intune and endpoint
+## Adoption and readiness
 
-_Device compliance, app protection and baselines for Copilot users._
+- [Copilot Success Kit](https://adoption.microsoft.com/copilot/success-kit) - Microsoft's adoption playbooks, templates and training material.
+- [Scenario Library](https://adoption.microsoft.com/en-gb/scenario-library/) - Role-based Copilot scenarios with success measures.
+- [Sample solution gallery](https://adoption.microsoft.com/sample-solution-gallery/?keyword=&sort-by=updateDateTime-true&page=1&product=Microsoft+365+Copilot) - Ready-made solutions filtered to Microsoft 365 Copilot.
+- [Microsoft 365 Copilot licensing explained](https://practical365.com/microsoft-365-copilot-licensing/) - Practical overview of license options and gotchas.
+
+## Prompts
+
+- [Copilot Prompt Gallery](https://m365.cloud.microsoft/copilot-prompts) - Microsoft's built-in library of prompts by app and role ([docs](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-prompt-gallery)).
+- [Export prompts from the gallery](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-prompt-gallery-export-prompts) - How admins export prompt content.
+- [CIAOPS prompt posts](https://blog.ciaops.com/tag/prompts/) - Community prompt collections from an MVP.
+- [Prompts in this repo](prompts/README.md) - Original prompts for admins and security teams.
 
 ## Agents and extensibility
 
-_Copilot Studio, Microsoft Foundry, declarative agents, connectors._
+- [Work IQ MCP overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/work-iq/mcp/overview) - Use Microsoft 365 work data through Model Context Protocol.
+- [Microsoft Agent 365](https://www.microsoft.com/en-us/microsoft-agent-365) - Microsoft's control plane for registering and governing agents.
+- [Add skills to declarative agents](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/build-declarative-agents-add-custom-skills) - Preview guidance for packaging agent skills.
+- [Add skills in Agent Builder](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-add-skills) - Upload skills to agents built in Agent Builder.
+- [Customize Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize) - Add your own skills to Cowork.
+- [Copilot Cowork skills lab](https://microsoft.github.io/copilot-camp/pages/copilot-cowork/01-cowork-skills/) - Hands-on lab for writing Cowork skills.
+- [Modern Copilot Studio agent skills](https://microsoft.github.io/mcscatblog/posts/modern-mcs-agent-skills/) - Copilot Studio team post on skills for agents.
+- [Agent Skills specification](https://agentskills.io) - The open SKILL.md format shared by several assistants.
+
+## Samples and tools
+
+- [Copilot Studio Samples](https://microsoft.github.io/CopilotStudioSamples/) - Official samples site ([GitHub](https://github.com/microsoft/CopilotStudioSamples)).
+- [copilot-pro-dev-samples](https://github.com/pnp/copilot-pro-dev-samples) - Community samples for declarative agents and plugins from PnP.
+- [Microsoft Teams samples](https://github.com/OfficeDev/Microsoft-Teams-Samples) - Teams app and agent samples.
+- [agentsbestpractices](https://github.com/luishdemetrio/agentsbestpractices) - Best-practice notes for building agents.
 
 ## Scripts and automation
 
-_PowerShell, Graph and Power Automate samples._
+- [Find inactive Copilot users](https://practical365.com/inactive-copilot-users/) - Script walkthrough for reclaiming unused licenses; some readers report Graph audit errors, so test first.
+- [Original skills in this repo](skills/README.md) - Skills that guide an assistant through readiness, oversharing and licence reviews.
 
-## Blogs, videos and community
+## Agent skills
 
-_Independent writing, talks and user groups._
+Skills use the open `SKILL.md` format, so the same folder can work in several assistants. See [skills/README.md](skills/README.md) for how to install them in Copilot Cowork, Agent Builder, Copilot Studio, declarative agents, Claude, Gemini CLI and Codex.
 
-## Contributing
+## Updates
 
-Open a pull request that adds one entry per line, in this format:
+Changes that affect admins and builders are logged in [UPDATES.md](UPDATES.md).
 
-```
-- [Name](https://link) - One sentence on what it is and why it is useful.
-```
+## Community
 
-Rules:
+- [Microsoft 365 Copilot Connection](https://m365copilotconnection.substack.com/) - Newsletter covering monthly Copilot changes.
+- [A Guide to Cloud](https://www.aguidetocloud.com/blog/) - Blog with monthly Copilot update summaries.
 
-- The resource must be about Microsoft 365 Copilot, Copilot agents or their security and governance.
-- It must be free to read or clearly labelled if paid.
-- No affiliate or tracking links. Keep entries in alphabetical order within a section.
-- Do not submit your own sales or marketing pages.
-
-This project is licensed under the MIT License.
+See [CONTRIBUTING.md](CONTRIBUTING.md) to add a resource.
